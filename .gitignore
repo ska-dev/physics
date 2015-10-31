@@ -9,5 +9,7 @@
 /build/
 /vendor/
 /bin/
+/.idea
+/.nbproject
 /composer.phar
 /nbproject/private/
