@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>RudShel</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet"
+              href="{{ asset('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+        <script src="{{ asset('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+    </head>
+    <body>
+        <div class="header-wrap well well-lg">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">Главная</button>
+                <button type="button" class="btn btn-default">Продукция</button>
+                <button type="button" class="btn btn-default">О компании</button>
+                <button type="button" class="btn btn-default">Контакты</button>
+                <button type="button" class="btn btn-default">Программное обеспечение</button>
+                <button type="button" class="btn btn-default">Сертификаты</button>
+                <button type="button" class="btn btn-default">Статьи</button>
+                <button type="button" class="btn btn-default">Доставка</button>
+                <button type="button" class="btn btn-default">Корзина</button>
+            </div>
+        </div>
+        <div class="body-wrap clearfix">
+            <div class="left-wrap">
+                <img src="{{ asset('assets/images/logo1.jpg') }}" alt="rudshel" />
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        Продукция
+                    </a>
+                    <a href="#" class="list-group-item">Измерительные приборы</a>
+                    <a href="#" class="list-group-item">Програмное обеспечение</a>
+                    <a href="#" class="list-group-item">О компании</a>
+                    <a href="#" class="list-group-item">Статьи</a>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Наш адрес</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Поиск</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <div class="right-wrap">
+                <h3>Блок контента</h3>
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+
+{% block javascripts %}{% endblock %}
+<script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
+</body>
+</html>
