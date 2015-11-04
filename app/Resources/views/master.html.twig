@@ -10,19 +10,11 @@
         <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     </head>
     <body>
-        <div class="header-wrap well well-lg">
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default">Главная</button>
-                <button type="button" class="btn btn-default">Продукция</button>
-                <button type="button" class="btn btn-default">О компании</button>
-                <button type="button" class="btn btn-default">Контакты</button>
-                <button type="button" class="btn btn-default">Программное обеспечение</button>
-                <button type="button" class="btn btn-default">Сертификаты</button>
-                <button type="button" class="btn btn-default">Статьи</button>
-                <button type="button" class="btn btn-default">Доставка</button>
-                <button type="button" class="btn btn-default">Корзина</button>
-            </div>
-        </div>
+        {% block header %}
+            {{ render(controller(
+                'MenuBundle:Menu:recentArticles'
+            )) }}
+        {% endblock %}
         <div class="body-wrap clearfix">
             <div class="left-wrap">
                 <img src="{{ asset('assets/images/logo1.jpg') }}" alt="rudshel" />

@@ -1,3 +1,11 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+#app:
+#    resource: "@AppBundle/Controller/"
+#    type:     annotation
+
+home:
+    path:      /home/
+    defaults:  { _controller: AppBundle:Home:index }
+
+#home:
+#    path:      /view/
+#    defaults:  { _controller: MenuBundle:Menu:view }
